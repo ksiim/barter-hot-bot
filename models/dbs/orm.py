@@ -9,6 +9,21 @@ from sqlalchemy import insert, inspect, or_, select, text
 class Orm:
     
     @staticmethod
+    async def get_admins():
+        async with Session() as session:
+            query = select(User).where(User.admin == True)
+            admins = (await session.execute(query)).scalars().all()
+            return admins
+    
+    @staticmethod
+    async def add_item(item):
+        async with Session() as session:
+            session.add(item)
+            await session.commit()
+            await session.refresh(item)
+            return item
+    
+    @staticmethod
     async def create_user(message):
         if await Orm.get_user_by_telegram_id(message.from_user.id) is None:
             async with Session() as session:
