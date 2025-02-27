@@ -174,10 +174,10 @@ async def send_to_admins(estate, photos):
     
 # @dp.message()
 # async def message_handler(message: Message, state: FSMContext):
-#     # await message.answer(
-#     #     text=f"<code>{message.photo[-1].file_id}</code>",
-#     # )
 #     await message.answer(
-#         text=f"<code>{message.document.file_id}</code>"
+#         text=f"<code>{message.photo[-1].file_id}</code>",
 #     )
+    # await message.answer(
+    #     text=f"<code>{message.document.file_id}</code>"
+    # )
     
