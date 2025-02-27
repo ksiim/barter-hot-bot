@@ -31,4 +31,4 @@ phone_markup = ReplyKeyboardMarkup(
 
 form_doc_file_id = 'BQACAgIAAxkBAAICLGe9abrN9VSZsGWbOTUvT-QAATR5bAAC1mcAArVt6UlwQaIEJEC-SjYE'
 
-start_photo_file_id = 'AgACAgIAAxkBAAICKme9aaBSoOsJJsUWlvosFc6dL2PdAAKQ5jEbLIvpSSz-HK7hbLLcAQADAgADeQADNgQ'
+start_photo_file_id = 'AgACAgIAAxkBAAID7WfAeqARRwtXz-avhP85-frdH6yoAAIK9DEbtW3xSeP4vYR5c7puAQADAgADeQADNgQ'
